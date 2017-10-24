@@ -16,8 +16,8 @@ import numba
 # In[3]:
 
 
-from matplotlib import pyplot as plt
-get_ipython().magic(u'matplotlib inline')
+# from matplotlib import pyplot as plt
+# get_ipython().magic(u'matplotlib inline')
 
 
 # In[57]:
