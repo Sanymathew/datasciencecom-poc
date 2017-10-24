@@ -99,7 +99,6 @@ rcClassifier.fit(churnData_train[features], churnData_train['Churn'])
 # Make Predictions
 predictions = rcClassifier.predict(churnData_test[features])
 probabilities = rcClassifier.predict_proba(churnData_test[features])
-display(predictions)
 
 
 # In[70]:
