@@ -284,22 +284,4 @@ def predictCustChurn(x):
     
 
 
-# In[ ]:
-
-
-retVal = predictCustChurn(churnData_test[features][:10].to_json(orient='split'))
-
-
-# In[ ]:
-
-
-print retVal['pred']
-
-
-# In[ ]:
-
-
-x = {"columns":["Account Length","Account Length","VMail Message","VMail Message","Day Mins","Day Mins","Day Calls","Day Calls","Day Charge","Day Charge","Eve Mins","Eve Mins","Eve Calls","Eve Calls","Eve Charge","Eve Charge","Night Mins","Night Mins","Night Calls","Night Calls","Night Charge","Night Charge","Intl Mins","Intl Mins","Intl Calls","Intl Calls","Intl Charge","Intl Charge","CustServ Calls","CustServ Calls","Int'l Plan_no","Int'l Plan_yes","VMail Plan_no","VMail Plan_yes","Account Length","Account Length","Area Code","VMail Message","VMail Message","Day Mins","Day Mins","Day Calls","Day Calls","Day Charge","Day Charge","Eve Mins","Eve Mins","Eve Calls","Eve Calls","Eve Charge","Eve Charge","Night Mins","Night Mins","Night Calls","Night Calls","Night Charge","Night Charge","Intl Mins","Intl Mins","Intl Calls","Intl Calls","Intl Charge","Intl Charge","CustServ Calls","CustServ Calls"],"index":[0,1],"data":[[128,128,25,25,265.1,265.1,110,110,45.07,45.07,197.4,197.4,99,99,16.78,16.78,244.7,244.7,91,91,11.01,11.01,10.0,10.0,3,3,2.7,2.7,1,1,1,0,0,1,128,128,415,25,25,265.1,265.1,110,110,45.07,45.07,197.4,197.4,99,99,16.78,16.78,244.7,244.7,91,91,11.01,11.01,10.0,10.0,3,3,2.7,2.7,1,1],[107,107,26,26,161.6,161.6,123,123,27.47,27.47,195.5,195.5,103,103,16.62,16.62,254.4,254.4,103,103,11.45,11.45,13.7,13.7,3,3,3.7,3.7,1,1,1,0,0,1,107,107,415,26,26,161.6,161.6,123,123,27.47,27.47,195.5,195.5,103,103,16.62,16.62,254.4,254.4,103,103,11.45,11.45,13.7,13.7,3,3,3.7,3.7,1,1]]}
-predictCustChurn(x)
-print n
 
