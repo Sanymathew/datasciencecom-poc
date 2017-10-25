@@ -279,7 +279,7 @@ def predictCustChurn(x):
     print x
     pred = rcClassifier.predict(x)
     probs = rcClassifier.predict_proba(x)
-    return {'pred':pred,'probs':probs}
+    return json.dumps(pred,probs)
     
     
 
