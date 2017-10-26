@@ -276,12 +276,10 @@ columnsImportant = churnData_test.iloc[:,featureImportanceIndex.tolist()].column
 # function that takes a input dataset without the churn column and returns predictions, probabilities
 # @numba.jit
 def predictCustChurn(x):
-    print "im here"
     x = pd.read_json(x,orient='split')
-    print x
     pred = rcClassifier.predict(x)
     probs = rcClassifier.predict_proba(x)
     resp = {'pred':pred, 'probs':probs}
-    df = Dataframe(data=resp,index=index)
+    df = pd.Dataframe(data=resp,index=index)
     result = df.to_json(orient='split')
     return result
