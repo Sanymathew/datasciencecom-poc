@@ -280,6 +280,6 @@ def predictCustChurn(x):
     pred = rcClassifier.predict(x)
     probs = rcClassifier.predict_proba(x)
     resp = {'pred':pred, 'probs':probs}
-    df = pd.Dataframe(data=resp,index=index)
+    df = pd.DataFrame(data=resp,index=index)
     result = df.to_json(orient='split')
     return result
